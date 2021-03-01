@@ -1,6 +1,6 @@
-.page {
+body {
+  margin: 0;
   font-family: Preview;
-  max-width: 1660px;
 }
 
 @font-face {
@@ -15,6 +15,7 @@
 
 .head {
   position:relative;
+  padding-top: 30px;
   background-image: url(../images/banner-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -37,27 +38,29 @@
 
 .logo_menu {
   display: flex;
-  padding-top: 30px;
   margin-bottom: 90px;
   width: 100%;
+  align-items: center;
   justify-content: space-around;
 }
 
 .logo {
   width: 180px;
-  height: 45px;
 }
 
 .menu_list {
   display: flex;
+  margin: 0;
 }
 
 .headline_item {
   list-style-type: none;
-  margin-left: 25px;
-  margin-right: 25px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.headline_item:nth-child(n+2) {
+  margin-left: 30px;
 }
 
 .headline_item_list {
@@ -68,7 +71,7 @@
 }
 
 .head_title {
-  width: 750px;
+  width: 48%;
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 145px;
@@ -76,7 +79,7 @@
   font-family: Gentium;
   font-size: 45px;
   color: #ffffff;
-  line-height: 65px;
+  line-height: 1.4em;
   letter-spacing: 2px;
 }
 
@@ -108,8 +111,8 @@
   display: flex;
   flex-direction: column;
   background-image: url(../images/trend1.jpg);
+  background-repeat: no-repeat;
   width: 24.7%;
-  height: 330px;
   z-index: 0;
 }
 
@@ -130,8 +133,8 @@
   display: flex;
   flex-direction: column;
   background-image: url(../images/trend2.jpg);
+  background-repeat: no-repeat;
   width: 24.7%;
-  height: 330px;
   margin-left: 0.3%;
   z-index: 0;
 }
@@ -153,8 +156,8 @@
   display: flex;
   flex-direction: column;
   background-image: url(../images/trend3.jpg);
+  background-repeat: no-repeat;
   width: 24.7%;
-  height: 330px;
   margin-left: 0.3%;
   z-index: 0;
 }
@@ -176,8 +179,8 @@
   display: flex;
   flex-direction: column;
   background-image: url(../images/trend4.jpg);
+  background-repeat: no-repeat;
   width: 24.7%;
-  height: 330px;
   margin-left: 0.3%;
   z-index: 0;
 }
@@ -210,12 +213,17 @@
   color: #b59f5b;
 }
 
+.trends_title_text {
+  margin: 0;
+}
+
 .trends_title_list {
   display: inline;
   list-style-type: none;
 }
 
 .trends_title {
+  margin: 0;
   padding: 0;
 }
 
@@ -228,7 +236,7 @@
 
 .double_charts {
   display: flex;
-  justify-content:space-around;
+  justify-content:space-between;
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
@@ -255,8 +263,11 @@
   text-transform:uppercase;
   font-family: Gentium;
   text-decoration:none;
-  color:#0f0d0e;
-  
+  color:#0f0d0e; 
+}
+
+.tegs_title_list:nth-child(n+2) {
+ margin-left: 20px; 
 }
 
 .name_tegs {
@@ -264,7 +275,6 @@
  text-decoration:none; 
  text-transform:uppercase;
  color:#b59f5b;
- padding-right:20px;
 }
 
 .author_name {
@@ -278,9 +288,15 @@
   text-align:left;
 }
 
+.post_date {
+  font-family: Preview;
+  vertical-align: text-top;
+  font-size:12px;
+  color:#888888;
+}
+
 .post_title_text {
-  display: block;
-  margin-top: 45px;
+  margin-top: 20px;
   font-family: Preview;
   font-size: 15px;
 }
@@ -310,6 +326,7 @@
   font-family:Gentium;
   font-size:14px;
   text-transform:uppercase;
+  margin-top: 0;
   margin-bottom:60px;
 }
 
@@ -328,12 +345,6 @@
   flex-direction: column;
   margin-left: 5.57%;
   width: 66.67%;
-}
-
-.post_date {
-  vertical-align: text-top;
-  font-size:12px;
-  color:#bfbfbf;
 }
 
 .post_title {
@@ -433,21 +444,24 @@
 .boxs {
   display:flex;
   flex-wrap:wrap;
+  width: 100%;
   padding:0;
   margin-top:30px;
 }
 
 .box_name {
   list-style-type: none;
-  outline-style:solid;
-  outline-width:3px;
-  outline-color:#ededed;
-  margin-right:9px;
+  border: 3px solid #ededed;
+  margin-right: 10px;
   margin-bottom:10px;
+  padding: 3px 10px;
 }
+
+
 
 .box_name_list {
  font-family: Gentium;
+ font-size: 12px;
  text-decoration:none; 
  text-transform:uppercase;
  color:#0f0d0e;
@@ -479,25 +493,25 @@
 }
 
 .tems_name_list {
- list-style-type: none; 
- margin-bottom:3px;
+ list-style-type: none;
 }
 
 .tems_name_list:nth-child(n+2) {
-  margin-top:10px;
+  margin-top:30px;
 }
 
 .option_tems {
  font-family: Gentium;
- font-size:16px;
+ font-size:14px;
  text-decoration:none; 
  color:#0f0d0e;
  border-bottom:2px solid #eeeeee;
+ padding-bottom: 10px;
 }
 
 .numbers_tems {
   font-family:Gentium;
-  font-size:9px;
+  font-size:12px;
   color:#b59f5b;
   vertical-align:text-top;
 }
@@ -588,12 +602,13 @@
 
 .shop_info {
   box-sizing: border-box;
-  padding: 30px;
+  padding: 25px;
   margin-left: -30px;
   margin-top: -30px;
   width: 100%;
   max-width: 345px;
   border: 2px solid #b59f5b;
+  flex-grow: 1;
 
 }
 
@@ -608,16 +623,18 @@
   margin-right: auto;
   margin-top: 60px;
   margin-bottom: 70px;
-  padding-top:20px;
-  padding-bottom:20px;
-  background-color:#f4f7f6;
+
+  
 }
 
 .socials {
   display: flex;
+  justify-content: center;
   margin: auto;
-  padding:auto;
-  width: 26.67%;
+  width: 100%;
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color:#f4f7f6;
   
 }
 
@@ -627,7 +644,7 @@
 }
 
 .paints:nth-child(n+2) {
-  margin-left:6.25%;
+  margin-left: 1.95%;
 }
 
 .web {
