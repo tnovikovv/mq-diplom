@@ -16,6 +16,7 @@ body {
 .head {
   position:relative;
   padding-top: 30px;
+  padding-bottom: 145px;
   background-image: url(../images/banner-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -48,6 +49,13 @@ body {
   width: 180px;
 }
 
+.menu_button_text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px,1px,1px,1px);
+}
+
 .menu_list {
   display: flex;
   margin: 0;
@@ -74,7 +82,6 @@ body {
   width: 48%;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 145px;
   margin: auto;
   font-family: Gentium;
   font-size: 45px;
@@ -112,7 +119,9 @@ body {
   flex-direction: column;
   background-image: url(../images/trend1.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   width: 24.7%;
+  min-height: 350px;
   z-index: 0;
 }
 
@@ -134,7 +143,9 @@ body {
   flex-direction: column;
   background-image: url(../images/trend2.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   width: 24.7%;
+  min-height: 350px;
   margin-left: 0.3%;
   z-index: 0;
 }
@@ -157,7 +168,9 @@ body {
   flex-direction: column;
   background-image: url(../images/trend3.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   width: 24.7%;
+  min-height: 350px;
   margin-left: 0.3%;
   z-index: 0;
 }
@@ -180,7 +193,9 @@ body {
   flex-direction: column;
   background-image: url(../images/trend4.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   width: 24.7%;
+  min-height: 350px;
   margin-left: 0.3%;
   z-index: 0;
 }
@@ -359,25 +374,45 @@ body {
  margin-top:60px;
 }
 
+.search_label {
+  width: 100%;
+}
+
 .input_search {
   background-color:#f4f7f6;
   box-sizing:border-box;
-  width:100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
   height:48px;
   border:2px solid #f4f7f6;
   
 }
 
 .button_search {
-  width:18.52%;
-  height:48px;
+  width: 17.78%;
+  height: 48px;
   background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
-  background-size:20px;
-  background-color:#b59f5b;
+  background-size: 20px;
+  background-color: #b59f5b;
   background-repeat: no-repeat;
   background-position:center center;
   cursor:pointer;
   border:2px solid #b59f5b;
+}
+
+.search_text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px,1px,1px,1px);
+}
+
+.button_search_text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px,1px,1px,1px);
 }
 
 .form_two {
@@ -405,9 +440,18 @@ body {
 .input_write {
  background-color:#f4f7f6;
  box-sizing:border-box;
+ padding-left: 10px;
+ padding-right: 10px;
  width:100%;
  height:48px; 
  border:2px solid #f4f7f6;
+}
+
+.write_text {
+  position:absolute;
+  width:1px;
+  height:1px;
+  clip:rect(1px,1px,1px,1px);
 }
 
 .button_write {
@@ -494,19 +538,19 @@ body {
 
 .tems_name_list {
  list-style-type: none;
+ border-bottom:2px solid #eeeeee;
+ padding-bottom: 10px;
 }
 
 .tems_name_list:nth-child(n+2) {
-  margin-top:30px;
+  margin-top:20px;
 }
 
 .option_tems {
  font-family: Gentium;
  font-size:14px;
  text-decoration:none; 
- color:#0f0d0e;
- border-bottom:2px solid #eeeeee;
- padding-bottom: 10px;
+ color:#0f0d0e; 
 }
 
 .numbers_tems {
@@ -657,27 +701,27 @@ body {
   background-size:25px;
 }
 
-.web-twitter {
+.web_twitter {
   background-image:url("https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg");
 }
 
-.web-pinterest {
+.web_pinterest {
   background-image:url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg");
 }
 
-.web-facebook {
+.web_facebook {
   background-image:url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg");
 }
 
-.web-instagram {
+.web_instagram {
   background-image:url("https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg");
 }
 
-.web-tumblr {
+.web_tumblr {
   background-image:url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
 }
 
-.link-text {
+.link_text {
   position:absolute;
   width:1px;
   height:1px;
@@ -695,4 +739,41 @@ body {
   margin-top:70px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+  .menu {
+    display: none;
+  }
+
+  .logo_menu {
+    justify-content: flex-start;
+    padding-left: 4.95%;
+  }
+
+  .head_title {
+    width: 79.43%;
+  }
+
+  .line_block {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .trends1 {
+  width: 50%; 
+  }
+
+  .trends2 {
+  width: 50%;
+  }
+
+  .trends3 {
+  width: 50%;
+  }
+
+  .trends4 {
+  width: 50%;
+  }
+
 }
