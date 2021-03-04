@@ -752,6 +752,12 @@ body {
 }
 
 .popup_block {
+  position: fixed;
+  top: 25%; 
+  bottom: 25%;
+  left: 25%;
+  right: 25%;
+  background-color: #ffffff;
   background-image: url("../svg/form-x.svg");
   background-repeat: no-repeat;
   background-size: 20px;
@@ -759,6 +765,7 @@ body {
   width: 23.49%;
   padding: 20px;
   margin: auto auto;
+
 }
 
 .popup_title {
@@ -797,7 +804,7 @@ body {
   -moz-appearance: none;
   padding-left: 10px;
   padding-right: 25px;
-  background-image: url(../svg/form-arrows.svg);
+  background-image: url("../svg/form-arrows.svg");
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: right center;
@@ -824,7 +831,7 @@ body {
   vertical-align: middle;
   width:15px;
   height:15px;
-  background-image: url("../svg/form-circle.svg");
+  background-image: url("../svg/form-empty-circle.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 15px;
@@ -833,6 +840,10 @@ body {
 .radio_group {
   display: inline-block;
   font-size: 13px;
+}
+
+.block_radio_buttons {
+  margin-bottom: 15px;
 }
 
 .radio_group:nth-of-type(n+2) {
@@ -852,7 +863,7 @@ body {
 }
 
 .radio:checked ~ .radio_group_text::before {
-  background-image: url("../svg/form-empty-circle.svg");
+  background-image: url("../svg/form-circle.svg");
 }
 
 .form_field_text {
