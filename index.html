@@ -106,7 +106,7 @@
 					<source
 					media="(min-width: 1200px)"
 					srcset="images/last-post1.jpg">
-					<img src="images/last-post1.jpg"
+					<img src="images/last-post1.jpg" class="post_picture_img"
 					alt="10 locations">
 				</picture>
 				<div class="post_info">
@@ -132,7 +132,7 @@
 					<source
 					media="(min-width: 1200px)"
 					srcset="images/last-post2.jpg">
-					<img src="images/last-post2.jpg"
+					<img src="images/last-post2.jpg" class="post_picture_img" 
 					alt="yoga in home">
 				</picture>
 				<div class="post_info">
@@ -157,7 +157,7 @@
 					<source
 					media="(min-width: 1200px)"
 					srcset="images/last-post3.jpg">
-					<img src="images/last-post3.jpg"
+					<img src="images/last-post3.jpg" class="post_picture_img"
 					alt="music festivale">
 				</picture>
 				<div class="post_info">
@@ -176,7 +176,7 @@
 					<source
 					media="(min-width: 1200px)"
 					srcset="images/last-post4.jpg">
-					<img src="images/last-post4.jpg"
+					<img src="images/last-post4.jpg" class="post_picture_img"
 					alt="sciense in kitchen">
 				</picture>
 				<div class="post_info">
@@ -201,7 +201,7 @@
 					<source
 					media="(min-width: 1200px)"
 					srcset="images/last-post5.jpg">
-					<img src="images/last-post5.jpg"
+					<img src="images/last-post5.jpg" class="post_picture_img"
 					alt="prints for interior">
 				</picture>
 				<div class="post_info">
@@ -494,5 +494,38 @@
 		</address>
 		<span class="write">Copyright © 2009-2019 City Blog LLC.</span> 
 	</footer>
+	<div class="popup_block">
+			<h2 class="popup_title">Ваш фидбек</h2>
+			<form class="form_popup">
+			<span class="select_text">Как часто вы заходите на сайт?</span>
+				<label class="select_group">
+					<select class="select_feedback">
+					<span class="ghost_text">Выберите значение из списка</span>
+					<option selected>Почти каждый день</option>
+					<option>Раз в несколько дней</option>
+					<option>Раз в несколько недель</option>
+					<option>Несколько раз в год</option>
+					</select>
+				</label>
+				</form>
+				<div class="form_question">
+				<span class="question_text">Вы подписаны на e-mail рассылку?</span>
+				<label class="radio_group">
+				 <input type="radio" class="radio" name="radio-group">
+				 <span class="radio_group_text">да</span>
+			    </label>
+				<label class="radio_group">
+				 <input type="radio" class="radio" name="radio-group">
+				 <span class="radio_group_text">нет</span>
+			    </label>
+			    </div>
+	 <div class="form_field_text">
+      <label class="field_group">
+        <span class="field_label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+        <textarea class="field_textarea" placeholder="Может, больше рецептов?" required></textarea>
+      </label>
+     </div>
+     <button class="popup_button" type="button">Отправить</button>
+	</div>
 </body>
 </html>
