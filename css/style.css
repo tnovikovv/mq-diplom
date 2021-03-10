@@ -40,8 +40,12 @@ body {
 
 .logo_menu {
   display: flex;
-  margin-bottom: 90px;
-  justify-content: space-around;
+  width: 90%;
+  max-width: 1220px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5%;
 }
 
 .logo {
@@ -56,6 +60,7 @@ body {
   font-size: 0.81em;
   display: flex;
   margin: 0;
+  padding: 0;
 }
 
 .headline_item {
@@ -75,6 +80,7 @@ body {
 
 .head_title {
   width: 48%;
+  max-width: 1220px;
   text-transform: uppercase;
   text-align: center;
   margin: auto;
@@ -260,6 +266,7 @@ body {
   margin-left: auto;
   margin-right: auto; 
   width: 89.42%;
+  max-width: 1220px;
 }
 
 .content {
@@ -272,7 +279,7 @@ body {
 }
 
 .post_picture {
-  margin-right: 30px;
+  margin-right: 4.08%;
   width: 51.13%;
 }
 
@@ -563,6 +570,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 89.42%;
+  max-width: 1220px;
 }
 
 .our_makes {
@@ -674,6 +682,7 @@ body {
 
 .under {
   width: 89.42%;
+  max-width: 1220px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
@@ -685,6 +694,7 @@ body {
   justify-content: center;
   margin: 0;
   padding-top: 20px;
+  padding-left: 0;
   padding-bottom: 20px;
   background-color:#f4f7f6; 
 }
@@ -747,7 +757,7 @@ body {
 }
 
 .popup_block {
-  display: none;
+  display: non;
   position: fixed;
   top: 25%; 
   bottom: 15%;
@@ -757,6 +767,17 @@ body {
   width: 23.49%;
   padding: 20px;
   margin: auto auto;
+}
+
+.popup_parent {
+  display: non;
+  background: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
 }
 
 .close {
@@ -926,7 +947,7 @@ body {
   width: 30px;
   height: 25px;
   right: 70px;
-  top: 10px;
+  top: 0;
   padding: 0;
   cursor: pointer;
   border: none;
@@ -1103,6 +1124,7 @@ body {
   margin-right: auto;
   margin-bottom: 0;
   margin-top: 90px;
+  padding-bottom: 0;
 }
 
 .logo {
