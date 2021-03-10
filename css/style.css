@@ -45,7 +45,7 @@ body {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
 }
 
 .logo {
@@ -757,20 +757,20 @@ body {
 }
 
 .popup_block {
-  display: non;
+  display: none;
   position: fixed;
   top: 25%; 
-  bottom: 15%;
   left: 25%;
   right: 25%;
   background-color: #ffffff;
   width: 23.49%;
+  max-width: 390px;
   padding: 20px;
   margin: auto auto;
 }
 
 .popup_parent {
-  display: non;
+  display: none;
   background: rgba(0, 0, 0, 0.55);
   height: 100%;
   position: fixed;
@@ -1101,7 +1101,6 @@ body {
 
 .popup_block {
   width: 35%;
-  bottom: 10%;
 }
 
 .popup_title {
@@ -1368,7 +1367,6 @@ width: 100%;
   width: 78%;
   left: 0;
   top: 5%;
-  bottom: 33%;
   right: 0;
   padding: 20px 30px;
 }
